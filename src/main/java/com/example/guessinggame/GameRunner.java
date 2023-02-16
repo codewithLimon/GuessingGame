@@ -13,6 +13,7 @@ public class GameRunner extends Application {
         Parent root= FXMLLoader.load(getClass().getResource("game.fxml"));
         Scene scene=new Scene(root);
         primaryStage.setScene(scene);
+        primaryStage.setTitle("Guess The Number");
         primaryStage.show();
     }
 

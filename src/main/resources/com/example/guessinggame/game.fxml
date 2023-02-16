@@ -7,23 +7,38 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="528.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guessinggame.Controller">
+<AnchorPane prefHeight="528.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guessinggame.MainController">
    <children>
-      <TextField fx:id="nameInput" layoutX="33.0" layoutY="28.0" />
-      <Button fx:id="nameSubmit" layoutX="192.0" layoutY="28.0" mnemonicParsing="false" onAction="#nameSubmitClicked" text="Submit" />
-      <Label fx:id="attempts" layoutX="735.0" layoutY="31.0" text="2">
+      <TextField fx:id="nameInput" alignment="CENTER" layoutX="33.0" layoutY="28.0" prefHeight="30.0" prefWidth="170.0">
          <font>
-            <Font name="System Bold" size="13.0" />
+            <Font size="13.0" />
+         </font></TextField>
+      <Button fx:id="nameSubmit" layoutX="213.0" layoutY="28.0" mnemonicParsing="false" onAction="#nameSubmitClicked" prefHeight="30.0" prefWidth="70.0" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="attempts" layoutX="739.0" layoutY="31.0" text="2">
+         <font>
+            <Font name="System Bold" size="15.0" />
          </font></Label>
-      <Label fx:id="beforeMessage" layoutX="292.0" layoutY="209.0" text="Press the button to generate the number" />
-      <Button fx:id="number" layoutX="371.0" layoutY="239.0" mnemonicParsing="false" onAction="#generateNumber" text="Number" />
-      <Circle fx:id="c1" fill="DODGERBLUE" layoutX="136.0" layoutY="419.0" onMouseClicked="#circle1Listener" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="c2" fill="DODGERBLUE" layoutX="411.0" layoutY="419.0" onMouseClicked="#circle2Listener" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="c3" fill="DODGERBLUE" layoutX="680.0" layoutY="419.0" onMouseClicked="#circle3Listener" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label fx:id="afterMessage" alignment="CENTER" layoutX="176.0" layoutY="276.0" prefHeight="17.0" prefWidth="450.0" />
-      <Label layoutX="634.0" layoutY="30.0" text="Attempts left:">
+      <Label fx:id="beforeMessage" layoutX="248.0" layoutY="191.0" text="Press the button to generate the number!">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font size="17.0" />
+         </font></Label>
+      <Button fx:id="number" layoutX="371.0" layoutY="223.0" mnemonicParsing="false" onAction="#generateNumber" text="Number" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Circle fx:id="c1" fill="DODGERBLUE" layoutX="138.0" layoutY="419.0" onMouseClicked="#circle1Listener" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="c2" fill="DODGERBLUE" layoutX="406.0" layoutY="419.0" onMouseClicked="#circle2Listener" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="c3" fill="DODGERBLUE" layoutX="660.0" layoutY="419.0" onMouseClicked="#circle3Listener" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="afterMessage" alignment="CENTER" layoutX="176.0" layoutY="276.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="633.0" layoutY="30.0" text="Attempts Left:">
+         <font>
+            <Font name="System Bold" size="15.0" />
          </font>
       </Label>
    </children>
