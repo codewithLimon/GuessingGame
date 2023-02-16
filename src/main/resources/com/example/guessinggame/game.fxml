@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="528.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guessinggame.Controller">
+   <children>
+      <TextField fx:id="nameInput" layoutX="33.0" layoutY="28.0" />
+      <Button fx:id="nameSubmit" layoutX="192.0" layoutY="28.0" mnemonicParsing="false" onAction="#nameSubmitClicked" text="Submit" />
+      <Label fx:id="attempts" layoutX="735.0" layoutY="31.0" text="2">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="beforeMessage" layoutX="292.0" layoutY="209.0" text="Press the button to generate the number" />
+      <Button fx:id="number" layoutX="371.0" layoutY="239.0" mnemonicParsing="false" onAction="#generateNumber" text="Number" />
+      <Circle fx:id="c1" fill="DODGERBLUE" layoutX="136.0" layoutY="419.0" onMouseClicked="#circle1Listener" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="c2" fill="DODGERBLUE" layoutX="411.0" layoutY="419.0" onMouseClicked="#circle2Listener" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="c3" fill="DODGERBLUE" layoutX="680.0" layoutY="419.0" onMouseClicked="#circle3Listener" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="afterMessage" alignment="CENTER" layoutX="176.0" layoutY="276.0" prefHeight="17.0" prefWidth="450.0" />
+      <Label layoutX="634.0" layoutY="30.0" text="Attempts left:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

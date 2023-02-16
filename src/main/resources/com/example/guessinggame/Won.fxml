@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="528" prefWidth="801" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guessinggame.Controller">
+    <children>
+        <Label fx:id="resultMessage" layoutX="366.0" layoutY="256.0" text="You Won ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
